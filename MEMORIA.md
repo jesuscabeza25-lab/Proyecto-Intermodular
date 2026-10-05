@@ -6,7 +6,10 @@
 ---
 
 # 1. INTRODUCCIÓN
+## 1.1. Contexto del Proyecto
+Hoy en día, la gestión de gastos compartidos es una necesidad habitual: ya sea para administrar las cuentas de un piso de estudiantes, organizar un viaje o planificar un evento en grupo. Aunque este tipo de situaciones cotidianas se ha digitalizado casi por completo, las herramientas actuales sigue presentando retos operativos para los usuarios.
 
+Aprovechando esta realidad, y dentro del marco del ciclo de 2º de Desarrollo de Aplicaciones Multiplataforma (DAM), surge este proyecto intermodular. El objetivo es integrar de forma práctica los conocimiento0s adquiridos en las distintas asignaturas (Desarrollo de Interfaces, Programación Multimedia, Acceso a Datos) para construir una solución de software propia y eficiente. Para ello, el proyecto plantea una evolución tecnológica escalonada: partiendo de una primera versión funcional de escritorio, para culminar en el desarrollo de una aplicación móvil multiplataforma completa.
 
 
 
