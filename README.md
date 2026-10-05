@@ -1,16 +1,18 @@
-<p align="center">
-  <img src="img/logo-payClear.png" alt="PayClear Logo" width="200" />
-</p>
+<div align="center">
 
-<h1 align="center">PayClear</h1>
+  <img src="img/logo-payClear.png" alt="PayClear Logo" width="180" />
 
-> **Gestor ágil de gastos compartidos y liquidación de deudas en local**
+  # PayClear
 
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](#)
-[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](#)
-[![Swing](https://img.shields.io/badge/GUI-Swing%20%2F%20Matisse-blue?style=for-the-badge)](#)
-[![Arquitectura](https://img.shields.io/badge/Arquitectura-MVC-green?style=for-the-badge)](#)
-[![Licencia: MIT](https://img.shields.io/badge/Licencia-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+  > **Gestor ágil de gastos compartidos y liquidación de deudas en local**
+
+  [![Java](https://img.shields.io/badge/Java-17%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](#)
+  [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](#)
+  [![Swing](https://img.shields.io/badge/GUI-Swing%20%2F%20Matisse-4E82B4?style=for-the-badge&logo=java&logoColor=white)](#)
+  [![Arquitectura](https://img.shields.io/badge/Arquitectura-MVC-2EA44F?style=for-the-badge)](#)
+  [![Licencia: MIT](https://img.shields.io/badge/Licencia-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+</div>
 
 ---
 
@@ -27,14 +29,7 @@ Nace como respuesta directa frente a soluciones comerciales privativas (Splitwis
 
 ---
 
-## 2. Entregables del Sprint 1 (02/10/2026)
-
-* **Gestion del Proyecto:** [Tablero Kanban en GitHub Projects](https://github.com/users/jesuscabeza25-lab/projects/1)
-* **Documentacion Tecnica Completa:** Consultar el archivo [MEMORIA.md](MEMORIA.md) para el analisis formal, especificaciones tecnicas y diseño de componentes.
-
----
-
-## 3. Arquitectura del Proyecto (Patron MVC)
+## 2. Arquitectura del Proyecto (Patron MVC)
 
 El proyecto esta organizado bajo una separacion estricta de responsabilidades:
 
