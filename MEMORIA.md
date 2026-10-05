@@ -34,27 +34,17 @@ Aprovechando esta realidad, y dentro del marco del ciclo de 2º de Desarrollo de
 
 ## 1.4.1. Objetivo general
 
-> Desarrollar una solución que sea multiplataforma y diseñada para poder eliminar la fricción y el desgaste diario al compartir gastos en pisos compartidos, viajes o simplemente quedadas en bares, permitiendo así registrar movimientos, desglosar compras y simplificar deudas pendientes de forma transparente, equitativa y sobretodo rápidamente.
-
-Tenemos 4 pilares fundamentales:
-
-* **Eliminación de los conflictos sociales:** Queremos quitar las tensiones y malentendidos económicos habituales que surgen al convivir en grupo, mediante una visualización limpia de los balances, sustituyendo los cálculos manuales y las conversaciones incómodas por una liquidación matemática clara.
-
-* **Privacidad y autonomía total (*Local-First*):** Queremos dar una herramienta totalmente funcional offline, donde los datos financieros residan exclusivamente en el dispositivo del usuario, sin registros obligatorios, servidores intermedios ni monetización invasiva y la posibilidad de bloquear la aplicación con contraseña o datos biométricos.
-
-* **Compensación inteligente de deudas:** Queremos introducir algoritmos optimizados que resuelvan saldos cruzados reduciendo drásticamente el número de transferencias o bizums necesarios, transformando así repartos complejos en pagos sencillos y faciles.
-
-* **Experiencia de usuario accesible y directa:** Queremos crear interfaz limpia e intuitiva que permita registrar un apunte o consultar la posición deudora en dos pasos, que cualquiera pueda utilizar la aplicación.
+> Desarrollar una aplicación de software movil y de escritorio orientada a la gestión y liquidación eficaz de los gastos compartidos en grupos cotidianos (pisos compartidos, viajes y eventos sociales... etc), eliminando la fricción y los conflictos económicos que se generan entre convivientes mediante un sistema *Local-First* privado, rapido y respaldado por una optimización algorítmica que simplifica al máximo las transferencias necesarias para saldar las cuentas.
 
 ## 1.4.2. Objetivos específicos
 
-| Área de Trabajo | Objetivos Específicos |
+| Área de Trabajo | Objetivo Específico |
 | :--- | :--- |
-| **Diseño y Usabilidad (UI/UX)** | • Diseñar una interfaz orientada a tareas en el paradigma de una ventana única, permitiendo registrar gastos o consultar balances en un flujo directo de dos pasos.<br><br>• Desarrollar el componente modular reutilizable `TarjetaSaldoParticipante` con señalización cromática automática según el balance contable (verde `#11734F` acreedor, rojo `#B53C3C` deudor y gris `#59665E` saldado).<br><br>• Diseñar un diálogo modal unificado (`DialogoGasto`) para captura ágil de compras con soporte simultáneo para reparto equitativo y asignaciones asimétricas individuales. |
-| **Lógica Contable y Algoritmia** | • Establecer una única fuente de verdad contable en la entidad agregada `Grupo`, recalculando los saldos dinámicamente a partir de los apuntes registrados.<br><br>• Diseñar e integrar una heurística voraz que liquide las obligaciones cruzadas en como máximo 1 transferencias directas, eliminando transacciones redundantes entre los participantes.<br><br>• Implementar control de precisión numérica mediante márgenes de tolerancia de redondeo para evitar inconsistencias por imprecisión en aritmética de punto flotante. |
-| **Arquitectura de Software (MVC)** | • Implementar el patrón arquitectónico **Modelo-Vista-Controlador (MVC)**, desacoplando el dominio contable de los componentes gráficos de Java Swing y de la gestión de eventos de usuario.<br><br>• Modelar la estructura formal de clases del sistema (`Participante`, `Gasto`, `Grupo`, `Transferencia`, `AlgoritmoLiquidacion`, `ServicioBoveda`) garantizando alta cohesión y bajo acoplamiento.<br><br>• Centralizar el flujo de interacción en el `ControladorPrincipal` (`ActionListener`), procesando las entradas de la Vista para mutar el Modelo y coordinando el refresco visual del estado consolidado. |
-| **Seguridad y Persistencia Local-First** | • Construir un motor de almacenamiento estrictamente local y 100% fuera de línea (*offline*), asegurando que los registros financieros residan exclusivamente en el equipo del usuario sin depender de servidores externos.<br><br>• Proteger el acceso a la bóveda de datos local mediante un mecanismo de validación de contraseñas basado en funciones hash SHA-256.<br><br>• Incorporar mecanismos de respaldo mediante exportación e importación manual de copias de seguridad portables en formato estructurado JSON. |
-| **Evolución Multiplataforma y Metodología** | • Desarrollar el cliente de escritorio en Java Swing cumpliendo la especificación de componentes JavaBeans y maquetación con NetBeans Matisse.<br><br>• Diseñar los modelos de datos y la arquitectura visual con vistas a su posterior traslación hacia una aplicación móvil reactiva desarrollada con Flutter.<br><br>• Gestionar el ciclo de desarrollo bajo el marco ágil Scrum, organizando el trabajo mediante historias de usuario, estimación relativa por *Story Points* y tableros visuales de seguimiento. |
+| **Diseño y Usabilidad (UI/UX)** | Diseñar una interfaz en ventana única orientada a tareas que integre el componente reutilizable `TarjetaSaldoParticipante` con semáforo cromático automático (verde para acreedor, rojo para deudor y gris para saldado). |
+| **Lógica Contable y Algoritmia** | Centralizar los balances en una única fuente  (`Grupo`) e integrar algoritmo que simplifique la liquidación de deudas en un máximo de 1 transferencias directas. |
+| **Arquitectura de Software (MVC)** | Implementar el patrón Modelo-Vista-Controlador (MVC) en Java Swing, desacoplando la representación gráfica de las reglas contables y centralizando los eventos en `ControladorPrincipal`. |
+| **Persistencia y Seguridad (Local-First)** | Garantizar operatividad 100% offline y privacidad total mediante almacenamiento en local, acceso protegido por contraseña (SHA-256) y copias de seguridad portables en JSON. |
+| **Multiplataforma y Metodología** | Desarrollar la versión de escritorio en Java Swing como base desacoplada para la futura extensión móvil con Flutter, gestionando el ciclo con Scrum y Sprints. |
 
 ## 1.5. Alcance del proyecto
 
