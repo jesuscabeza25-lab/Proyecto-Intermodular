@@ -14,13 +14,7 @@ Aprovechando esta realidad, y dentro del marco del ciclo de 2º de Desarrollo de
 
 
 
-## 1.5. Alcance del proyecto
-El alcance global de la aplicación contempla el ciclo completo de producto:
-* Registro rápido de transacciones con concepto, importe y participante pagador.
-* Visualización centralizada de balances individuales e historial de movimientos.
-* Cálculo automatizado de liquidación multilateral directa entre miembros del grupo.
-* Diálogo modal interactivo (*Calculadora Rápida*) para reparto puntual de tickets.
-* Enfoque específico del **Sprint 1**: Ideación, análisis de mercado (benchmarking), prototipado de alta fidelidad navegable en Figma, definición del Backlog y especificación técnica de la arquitectura de clases y componentes.
+
 
 # 1.4. Objetivos del proyecto.
 
@@ -37,3 +31,17 @@ Tenemos 4 pilares fundamentales:
 * **Compensación inteligente de deudas:** Queremos introducir algoritmos optimizados que resuelvan saldos cruzados reduciendo drásticamente el número de transferencias o bizums necesarios, transformando así repartos complejos en pagos sencillos y faciles.
 
 * **Experiencia de usuario accesible y directa:** Queremos crear interfaz limpia e intuitiva que permita registrar un apunte o consultar la posición deudora en dos pasos, que cualquiera pueda utilizar la aplicación.
+
+## 1.5. Alcance del proyecto
+
+El alcance global de PayClear contempla el ciclo de vida completo de esta aplicacion, cubriendo tanto sus funcionalidades como los objetivos para este primer sprint.
+
+* **Registro inmediato de los gastos:** Entrada rapida de los datos, indicando concepto, importe y quien paga en la menor cantidad de clics posibles.
+* **Pantalla de balances:** Pantalla donde ver en tiempo real el estado de cada cuenta individualmente mediante un sistema de señalizacion con colores (verde/rojo/gris) e historial de movimientos.
+* **Liquidación multilateral optimizada:** Integracion de un algoritmo que simplifica las deudas al mínimo numero de transferencias directas entre integrantes.
+* **Calculadora de reparto rapido:** Overlay para dividir cenas, compras, peajes... De manera equitativa y personalizada sin abandonar la pantalla principal.
+
+---
+
+> **Enfoque específico del Sprint 1:**  
+> Ideación, análisis de mercado (benchmarking), prototipado de alta fidelidad navegable en Figma, definición del Backlog y especificación técnica de la arquitectura de clases y componentes.
