@@ -11,10 +11,15 @@ Hoy en día, la gestión de gastos compartidos es una necesidad habitual: ya sea
 
 Aprovechando esta realidad, y dentro del marco del ciclo de 2º de Desarrollo de Aplicaciones Multiplataforma (DAM), surge este proyecto intermodular. El objetivo es integrar de forma práctica los conocimiento0s adquiridos en las distintas asignaturas (Desarrollo de Interfaces, Programación Multimedia, Acceso a Datos) para construir una solución de software propia y eficiente. Para ello, el proyecto plantea una evolución tecnológica escalonada: partiendo de una primera versión funcional de escritorio, para culminar en el desarrollo de una aplicación móvil multiplataforma completa.
 
+### ​1.3. Propuesta de solución
 
+​Para solucionar todo este lío, proponemos **PayClear**. Nuestra idea es crear una aplicación para gestionar deudas que vaya directa al grano, sin rodeos. Lo vamos a conseguir basándonos en estos puntos clave:
 
-
-
+-   ​**100% Offline y privada (Local-First):** La app funciona en tu propio dispositivo. No necesitas internet, ni crearte un perfil, ni iniciar sesión. Abres la app y listo, los datos se quedan en tu móvil.
+-   ​**Rápida y directa (Cero fricción):** Hemos diseñado la interfaz para que nadie se pierda. En un máximo de 2 clics tienes que poder registrar un ticket o ver cómo están las cuentas.
+-   ​**Las cuentas claras de un vistazo:** Vamos a usar un sistema de colores muy visual. Si tu tarjeta sale en **verde**, te deben dinero; si sale en **rojo**, te toca pagar; y si sale en **gris**, estás a cero.
+-   ​**Algoritmo inteligente de deudas:** Hemos programado un sistema (un algoritmo __Greedy__) que hace la "magia" matemática para que el grupo tenga que hacerse el menor número de Bizums o transferencias posibles para quedar en paz.
+-   ​**Evolución del proyecto:** Empezaremos construyendo el programa para ordenador usando Java Swing (con su interfaz visual), y el objetivo final será migrarlo y lanzarlo como una aplicación móvil con Flutter.
 
 # 1.4. Objetivos del proyecto.
 
