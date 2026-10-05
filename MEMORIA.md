@@ -11,6 +11,15 @@ Hoy en día, la gestión de gastos compartidos es una necesidad habitual: ya sea
 
 Aprovechando esta realidad, y dentro del marco del ciclo de 2º de Desarrollo de Aplicaciones Multiplataforma (DAM), surge este proyecto intermodular. El objetivo es integrar de forma práctica los conocimiento0s adquiridos en las distintas asignaturas (Desarrollo de Interfaces, Programación Multimedia, Acceso a Datos) para construir una solución de software propia y eficiente. Para ello, el proyecto plantea una evolución tecnológica escalonada: partiendo de una primera versión funcional de escritorio, para culminar en el desarrollo de una aplicación móvil multiplataforma completa.
 
+## 1.2. Problema o necesidad detectada
+​Aunque ya existen aplicaciones muy famosas para dividir gastos (seguro que os suenan Splitwise o Tricount), la realidad es que usarlas se ha vuelto un poco desesperante últimamente. Nos hemos dado cuenta de que tienen varios problemas que frustran bastante al usuario:
+
+* **Pérdida de tiempo y registros obligatorios:** Para anotar un simple gasto del supermercado tienes que crearte una cuenta, dar tu correo o tu teléfono. Corta mucho el rollo cuando solo quieres apuntar algo rápido.
+* **Si no hay internet, no hay app:** La mayoría dependen de la nube. Si te vas de viaje rural o a un festival y la cobertura falla, no puedes usar la aplicación.
+* **Publicidad y funciones de pago:** Las apps actuales te bombardean con anuncios molestos y te bloquean opciones básicas (como añadir más de "X" gastos al día) para obligarte a pagar una suscripción.
+* **Lo que nos dijo la gente:** (METER AQUI DATOS DEL FORMULARIO)
+* **Ejemplo:** "De hecho, en la encuesta que pasamos a numerosas personas, nos sorprendió ver que la queja principal era la publicidad y lo lentas que son para simplemente apuntar un gasto...."
+
 ### ​1.3. Propuesta de solución
 
 ​Para solucionar todo este lío, proponemos **PayClear**. Nuestra idea es crear una aplicación para gestionar deudas que vaya directa al grano, sin rodeos. Lo vamos a conseguir basándonos en estos puntos clave:
