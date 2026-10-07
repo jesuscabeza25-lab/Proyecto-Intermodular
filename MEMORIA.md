@@ -41,7 +41,7 @@ Aprovechando esta realidad, y dentro del marco del ciclo de 2º de Desarrollo de
 | Área de Trabajo | Objetivo Específico |
 | :--- | :--- |
 | **Diseño y Usabilidad (UI/UX)** | Diseñar una interfaz en ventana única orientada a tareas que integre el componente reutilizable `TarjetaSaldoParticipante` con semáforo cromático automático (verde para acreedor, rojo para deudor y gris para saldado). |
-| **Lógica Contable y Algoritmia** | Centralizar los balances en una única fuente  (`Grupo`) e integrar algoritmo que simplifique la liquidación de deudas en un máximo de 1 transferencias directas. |
+| **Lógica Contable y Algoritmia** | Centralizar los balances en una única fuente  (`Grupo`) e integrar algoritmo que simplifique la liquidación de deudas en un máximo de n - 1 transferencias directas. |
 | **Arquitectura de Software (MVC)** | Implementar el patrón Modelo-Vista-Controlador (MVC) en Java Swing, desacoplando la representación gráfica de las reglas contables y centralizando los eventos en `ControladorPrincipal`. |
 | **Persistencia y Seguridad (Local-First)** | Garantizar operatividad 100% offline y privacidad total mediante almacenamiento en local, acceso protegido por contraseña (SHA-256) y copias de seguridad portables en JSON. |
 | **Multiplataforma y Metodología** | Desarrollar la versión de escritorio en Java Swing como base desacoplada para la futura extensión móvil con Flutter, gestionando el ciclo con Scrum y Sprints. |
@@ -57,5 +57,17 @@ El alcance global de PayClear contempla el ciclo de vida completo de esta aplica
 
 ---
 
-> **Enfoque específico del Sprint 1:**  
-> Ideación, análisis de mercado (benchmarking), prototipado de alta fidelidad navegable en Figma, definición del Backlog y especificación técnica de la arquitectura de clases y componentes.
+## 1.7. Estructura de la memoria
+
+| Capítulo | Contenido Proyectado y Enfoque en PayClear |
+| :--- | :--- |
+| **1. Introducción y Contexto** | Justificación del proyecto, detección del problema en soluciones de mercado, propuesta de valor Local-First, objetivos (general y específicos), alcance y delimitación del Sprint 1. |
+| **2. Planificación y Gestión Ágil** | Organización metodológica bajo Scrum: gestión de artefactos (Product Backlog y Sprint Backlog), roles del equipo y control de versiones en GitHub. |
+| **3. Análisis de Requisitos y Viabilidad** | Estudio de viabilidad técnica y operativa, resultados de la validación empírica con usuarios, especificación de requisitos funcionales (casos de uso) y no funcionales (rendimiento *offline*, privacidad). |
+| **4. Diseño del Sistema y Arquitectura** | Modelado arquitectónico bajo el patrón MVC, diseño del catálogo formal de clases y entidades (`Grupo`, `Participante`, `Gasto`), prototipado UI/UX en Figma y diseño modular de componentes Swing. |
+| **5. Desarrollo e Implementación** | Codificación del núcleo de la aplicación: lógica contable en Java, integración de la heurística voraz de simplificación de deudas, desarrollo del componente visual `TarjetaSaldoParticipante` y motor de persistencia local en JSON con hash SHA-256. |
+| **6. Pruebas y Control de Calidad (QA)** | Batería de pruebas unitarias con JUnit sobre el modelo de balances y el algoritmo de reparto, pruebas de interfaz gráfica y validación de escenarios límite (entradas erróneas y redondeos). |
+| **7. Empaquetado y Despliegue** | Generación del ejecutable distribuible de escritorio (.jar) con sus dependencias y especificación de los requisitos de entorno para su ejecución multiplataforma. |
+| **8. Manuales de Usuario y Técnico** | Guía visual de uso paso a paso para el usuario final y documentación técnica para desarrolladores (estructura del código, dependencias y ciclo de vida de los eventos). |
+| **9. Evolución del Proyecto (Fase Móvil)** | Hoja de ruta para la traslación del modelo hacia dispositivos móviles: análisis de arquitectura reactiva en Flutter y reutilización de la lógica contable establecida en escritorio. |
+| **10. Conclusiones y Líneas Futuras** | Balance global del proyecto, grado de consecución de objetivos, dificultades técnicas superadas y planificación de futuras extensiones. |
