@@ -96,6 +96,42 @@ En cumplimiento con los requerimientos del primer sprint para esta entrega:
 
 ---
 
+## 1.6. Limitaciones y Marco Normativo
+
+### 1.6.1. Limitaciones y exclusiones técnicas
+* **Sin pasarelas de pago bancarias:** PayClear calcula y optimiza los repartos matemáticos, pero no procesa dinero real (no conecta con Bizum o bancos) para no requerir licencias financieras. Los pagos los realizan los usuarios por su cuenta.
+* **Sin backend ni nube:** La app es 100% *Local-First*. Guarda todo en el equipo del usuario para que funcione sin internet y garantice la privacidad de los datos.
+* **Moneda única inicial (Euro):** Operamos con el euro local para evitar consultar tipos de cambio mediante APIs externas que romperían el modo sin conexión.
+
+---
+
+### 1.6.2. Marco fiscal y laboral 
+Ante un lanzamiento comercial en España, el proyecto se encuadra en la legislación laboral y tributaria vigente:
+
+* **Obligaciones fiscales (Hacienda):**
+  * **IAE (Epígrafe 763):** Código censal de Hacienda correspondiente a *Programadores y Analistas de Informática*, necesario para facturar desarrollo y licencias de software.
+  * **IVA (Modelo 303 y 390):** Aplicación del 21% de IVA en la venta o servicios del software. Se liquida cada tres meses ante la Agencia Tributaria con el **Modelo 303** y se presenta su resumen anual con el **Modelo 390**.
+* **Marco laboral (Convenio Colectivo):**
+  * Aplicación del **Convenio Colectivo Estatal TIC** (Tecnologías de la Información y Consultoría), que establece los sueldos mínimos, las categorías del equipo (programador, diseñador UI/UX) y un límite máximo de jornada de 1.800 horas anuales.
+
+---
+
+### 1.6.3. Prevención de Riesgos Laborales - PRL 
+* **Normativa (Real Decreto 488/1997):** Regula la salud laboral en puestos de trabajo frente a **Pantallas de Visualización de Datos (PVD)**.
+* **Aplicación en el proyecto:**
+  * *Fatiga visual:* Diseñar la interfaz con contrastes cromáticos legibles y adaptar el brillo en las pantallas de trabajo.
+  * *Ergonomía física:* Uso de puestos de trabajo con soporte lumbar regulable, distancia de 40 a 70 cm a la pantalla y pausas activas para evitar lesiones por estar sentados.
+
+---
+
+### 1.6.4. Financiación y ayudas públicas 
+Vías de apoyo público del Estado para sustentar el desarrollo técnico y la posterior versión móvil:
+* **ENISA Jóvenes Emprendedores:** Préstamos del Ministerio de Industria dirigidos a proyectos tecnológicos impulsados por menores de 40 años, sin exigir avales personales.
+* **Programa Kit Digital:** Subvenciones de los Fondos Europeos Next Generation para la implantación de herramientas digitales de gestión.
+* **Neotec (CDTI):** Financiación a fondo perdido para empresas emergentes que creen tecnología e innovación algorítmica propia.ç
+
+---
+
 ## 1.7. Estructura de la memoria
 
 | Capítulo | Contenido Proyectado y Enfoque en PayClear |
