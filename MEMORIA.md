@@ -46,14 +46,53 @@ Aprovechando esta realidad, y dentro del marco del ciclo de 2º de Desarrollo de
 | **Persistencia y Seguridad (Local-First)** | Garantizar operatividad 100% offline y privacidad total mediante almacenamiento en local, acceso protegido por contraseña (SHA-256) y copias de seguridad portables en JSON. |
 | **Multiplataforma y Metodología** | Desarrollar la versión de escritorio en Java Swing como base desacoplada para la futura extensión móvil con Flutter, gestionando el ciclo con Scrum y Sprints. |
 
+---
+
 ## 1.5. Alcance del proyecto
 
-El alcance global de PayClear contempla el ciclo de vida completo de esta aplicacion, cubriendo tanto sus funcionalidades como los objetivos para este primer sprint.
+El alcance global de PayClear cubre el ciclo de vida completo del producto y su desarrollo evolutivo por fases, delimitando de forma clara lo que se implementa en esta primera entrega frente a lo proyectado para el resto del curso.
 
-* **Registro inmediato de los gastos:** Entrada rapida de los datos, indicando concepto, importe y quien paga en la menor cantidad de clics posibles.
-* **Pantalla de balances:** Pantalla donde ver en tiempo real el estado de cada cuenta individualmente mediante un sistema de señalizacion con colores (verde/rojo/gris) e historial de movimientos.
-* **Liquidación multilateral optimizada:** Integracion de un algoritmo que simplifica las deudas al mínimo numero de transferencias directas entre integrantes.
-* **Calculadora de reparto rapido:** Overlay para dividir cenas, compras, peajes... De manera equitativa y personalizada sin abandonar la pantalla principal.
+### 1.5.1. Ciclo de vida y fases de evolución de la aplicación
+La solución se desarrolla siguiendo un modelo incremental distribuido en tres fases tecnológicas:
+1. **Fase 1: Prototipado, Ideación y Arquitectura (Fase actual - Sprint 1):** Análisis de mercado, prototipado navegable de alta fidelidad en Figma, definición de la arquitectura MVC y estructuración del backlog. En este ciclo no se escribira codigo fuente en Java.
+2. **Fase 2: Versión de Escritorio (Java Swing):** Implementación del entorno de escritorio usando el diseñador visual de NetBeans, codificación de la lógica de la calculadora y organizacion del proyecto mediante "MVC".
+3. **Fase 3: Expansión Móvil (Flutter):** Llevar lo hecho en escritorio a una aplicacion movil contando con el ya mencionado local-first sin servidores externos.
+
+---
+
+### 1.5.2. Contextualización de funcionalidades previstas y prototipo
+Cada pantalla y función responde a una necesidad concreta detectada en las alternativas comerciales:
+
+* **Pantalla principal y balances:**
+  * *Por qué se hace y qué nos llevó a ella:* En herramientas como Splitwise los balances están escondidos tras varios menús. Hacía falta ver de golpe la situación económica del grupo.
+  * *Función esperada:* Ventana única que lista los miembros y aplica un código de colores automático con el componente `TarjetaSaldoParticipante`: verde para quien cobra, rojo para quien debe y gris para saldo a cero.
+  
+  ![Pantalla de balances](https://github.com/jesuscabeza25-lab/Desarrollo-de-Interfaz/blob/main/img/pantalla%20de%20deudas%20pendientes%20y%20saldadas.png?raw=true)
+
+* **Calculadora de reparto rápido (modal overlay):**
+  * *Por qué se hace y qué nos llevó a ella:* Al pagar cuentas o compras conjuntas se pierde tiempo echando cálculos a mano o repartiendo picos sueltos.
+  * *Función esperada:* Ventana modal emergente que permite meter el importe del ticket y elegir quiénes participan para repartir el gasto a partes iguales o personalizadas sin cerrar la pantalla principal.
+  
+  ![Calculadora Modal](https://github.com/jesuscabeza25-lab/Desarrollo-de-Interfaz/blob/main/img/Calculadora.png?raw=true)
+
+* **Liquidación multilateral optimizada (Algoritmo Voraz):**
+  * *Por qué se hace y qué nos llevó a ella:* En grupos con muchos gastos cruzados se generan multitud de micropagos cruzados entre amigos.
+  * *Función esperada:* Un algoritmo voraz analiza los balances en el propio equipo y cruza las deudas directamente entre el mayor deudor y el mayor acreedor, liquidando el grupo en un máximo de $n - 1$ transferencias simples.
+
+* **Acceso al grupo local:**
+  * *Por qué se hace y qué nos llevó a ella:* Pedir usuario, contraseña o email es la principal molestia al usar apps comerciales.
+  * *Función esperada:* Acceso directo para abrir o crear el archivo del grupo de gastos en el equipo sin necesidad de internet ni registro en servidores.
+  
+  ![Acceso al grupo local](https://github.com/jesuscabeza25-lab/Desarrollo-de-Interfaz/blob/main/img/Iniciar%20sesion.png?raw=true)
+
+---
+
+### 1.5.3. Delimitación específica del Sprint 1
+En cumplimiento con los requerimientos del primer sprint para esta entrega:
+* El alcance práctico se limita al diseño del prototipo interactivo en Figma con sus transiciones y modales.
+* No se incluye codificación en Java Swing para este sprint.
+* Se entrega la planificación en GitHub Projects (Product y Sprint Backlog) y la especificación conceptual de la arquitectura MVC.
+
 
 ---
 
