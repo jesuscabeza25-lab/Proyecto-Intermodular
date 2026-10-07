@@ -14,6 +14,8 @@
 
 </div>
 
+Ver la memoria técnica del proyecto en: [MEMORIA.md](MEMORIA.md)
+
 ---
 
 ## 1. Descripcion General
@@ -51,7 +53,7 @@ src/main/java/com/payclear/
     
  ````
 
- ## 4. Requisitos y Compilacion
+ ## 3. Requisitos y Compilacion
 
 ### Requisitos de Entorno
 
@@ -60,7 +62,7 @@ src/main/java/com/payclear/
 * **Gestor de Construccion:** Apache Ant o Maven.
 
 
-## 5. Equipo de Desarrollo
+## 4. Equipo de Desarrollo
 
 * Guillermo Eugui Sanchez
 * Jesus Cabeza
