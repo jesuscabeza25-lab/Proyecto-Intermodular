@@ -24,25 +24,48 @@ En la actualidad, la gestión compartida de gastos en entornos cotidianos —com
 En este marco surge PayClear, un proyecto desarrollado en el ciclo formativo de grado superior en Desarrollo de Aplicaciones Multiplataforma (DAM). PayClear se posiciona en el espacio intermedio del sector: un software con arquitectura Local-First (local por diseño) que elimina los costes de infraestructura en la nube y los intermediarios corporativos, combinando la usabilidad de las aplicaciones comerciales de primer nivel con la privacidad, gratuidad e inmediatez del software libre.
 
 ## 1.2. Problema o necesidad detectada
-​Aunque ya existen aplicaciones muy famosas para dividir gastos (seguro que os suenan Splitwise o Tricount), la realidad es que usarlas se ha vuelto un poco desesperante últimamente. Nos hemos dado cuenta de que tienen varios problemas que frustran bastante al usuario:
+A pesar de la popularidad de las herramientas comerciales para la gestión de deudas, el modelo de negocio de estas plataformas ha terminado por degradar la experiencia de uso. Con el fin de validar científicamente esta problemática antes de iniciar el desarrollo técnico, el equipo realizó un estudio de mercado mediante una encuesta pública (*Google Forms*) a un total de 14 usuarios del perfil objetivo (estudiantes, compañeros de piso y colectivos habituales).
 
-* **Pérdida de tiempo y registros obligatorios:** Para anotar un simple gasto del supermercado tienes que crearte una cuenta, dar tu correo o tu teléfono. Corta mucho el rollo cuando solo quieres apuntar algo rápido.
-* **Si no hay internet, no hay app:** La mayoría dependen de la nube. Si te vas de viaje rural o a un festival y la cobertura falla, no puedes usar la aplicación.
-* **Publicidad y funciones de pago:** Las apps actuales te bombardean con anuncios molestos y te bloquean opciones básicas (como añadir más de "X" gastos al día) para obligarte a pagar una suscripción.
-* **Lo que nos dijo la gente:** (METER AQUI DATOS DEL FORMULARIO)
-* **Ejemplo:** "De hecho, en la encuesta que pasamos a numerosas personas, nos sorprendió ver que la queja principal era la publicidad y lo lentas que son para simplemente apuntar un gasto...."
+### Datos empíricos extraídos del estudio de mercado:
+
+-   **Frecuencia de necesidad:** El **57,1%** de los encuestados comparte gastos grupales varias veces por semana y un **21,4%** lo hace de forma puntual en viajes o eventos, confirmando la alta recurrencia del problema.
+-   **Abandono de apps comerciales:** Un abrumador **92,9%** de los usuarios recurre a la memoria o a transferencias directas por Bizum y el **21,4%** utiliza notas de móvil o WhatsApp debido a la fricción de las apps actuales. Ningún usuario encuestado utiliza Splitwise como herramienta principal.
+-   **Grado de frustración con las limitaciones:** El **50%** de los usuarios expresa una molestia alta o extrema (puntuaciones de 4 y 5 sobre 5) respecto a los límites diarios de gastos, la publicidad abusiva y las suscripciones de pago.
+-   **Factores determinantes para la adopción:** El **78,6%** exige una aplicación 100% gratuita y sin límites de registro; el **42,9%** rechaza obligatoriamente tener que registrarse con correo o crear cuenta; el **42,9%** demanda una calculadora rápida para desglosar tickets; y el **28,6%** valora de forma prioritaria el funcionamiento 100% offline.
+-   **Preferencia de plataforma:** El **42,9%** prefiere una solución híbrida (móvil pero con versión de escritorio para gestionar cuentas complejas con comodidad) y un **35,7%** prefiere únicamente móvil.
+-   **Demandas cualitativas de los usuarios:** Rapidez de uso, privacidad total sin control externo sobre pequeños gastos cotidianos y un reparto justo sin micropagos invasivos.
+
+  
+
+### Análisis de la problemática según la estructura organizativa de las soluciones actuales:
+
+Los hallazgos del formulario reflejan deficiencias estructurales en las distintas áreas operativas de las empresas del sector:
+
+1.  **Departamento de Producto y UI/UX:** Prioriza los intereses de monetización sobre la usabilidad, saturando la pantalla de banners publicitarios y obligando al usuario a realizar múltiples clics o pasar por pantallas de registro antes de anotar un simple gasto.
+2.  **Departamento de Infraestructura y Sistemas (Backend):** La insistencia en centralizar las bases de datos en la nube genera una dependencia absoluta de la conexión a internet y obliga a repercutir costes de mantenimiento al usuario mediante suscripciones *Pro*.
+3.  **Departamento Legal y de Protección de Datos:** La exigencia de correos electrónicos, números de teléfono y la monitorización de hábitos de consumo vulnera el principio de minimización de datos del RGPD, generando desconfianza en los usuarios sobre el tratamiento de sus finanzas personales.
 
 
-### ​1.3. Propuesta de solución
+### 1.3. Propuesta de solución
 
-​Para solucionar todo este lío, proponemos **PayClear**. Nuestra idea es crear una aplicación para gestionar deudas que vaya directa al grano, sin rodeos. Lo vamos a conseguir basándonos en estos puntos clave:
+PayClear responde a estas deficiencias mediante una aplicación de gestión de deudas centrada exclusivamente en la eficiencia, la privacidad y la agilidad de uso, articulada bajo los siguientes pilares de diseño:
 
--   ​**100% Offline y privada (Local-First):** La app funciona en tu propio dispositivo. No necesitas internet, ni crearte un perfil, ni iniciar sesión. Abres la app y listo, los datos se quedan en tu móvil.
--   ​**Rápida y directa (Cero fricción):** Hemos diseñado la interfaz para que nadie se pierda. En un máximo de 2 clics tienes que poder registrar un ticket o ver cómo están las cuentas.
--   ​**Las cuentas claras de un vistazo:** Vamos a usar un sistema de colores muy visual. Si tu tarjeta sale en **verde**, te deben dinero; si sale en **rojo**, te toca pagar; y si sale en **gris**, estás a cero.
--   ​**Algoritmo inteligente de deudas:** Hemos programado un sistema (un algoritmo __Greedy__) que hace la "magia" matemática para que el grupo tenga que hacerse el menor número de Bizums o transferencias posibles para quedar en paz.
--   ​**Evolución del proyecto:** Empezaremos construyendo el programa para ordenador usando Java Swing (con su interfaz visual), y el objetivo final será migrarlo y lanzarlo como una aplicación móvil con Flutter.
+-   **Arquitectura Local-First y Privacidad Estricta:** La base de datos reside 100% en el almacenamiento local del dispositivo mediante ficheros JSON codificados. Funciona de manera autónoma sin conexión a internet y elimina por completo los formularios de registro, correos o contraseñas en servidores externos.
+-   **Cero Fricción en UI/UX:** Interfaz de ventana única que permite registrar cualquier gasto o consultar el estado global del grupo en menos de dos clics, integrando un componente reutilizable (`TarjetaSaldoParticipante`) con un semáforo cromático automático (verde = acreedor, rojo = deudor, gris = saldado).
+-   **Calculadora de Reparto Rápido:** Modal emergente enfocado en la división inmediata de tickets de restaurantes o compras colectivas a partes iguales o personalizadas.
+-   **Evolución Tecnológica Escalonada:** Desarrollo de una versión de escritorio en Java Swing bajo el patrón arquitectónico MVC, sirviendo como núcleo desacoplado para su posterior traslado hacia dispositivos móviles mediante el *framework* Flutter.
 
+#### Oportunidades de negocio previsibles en el sector
+
+Aunque PayClear nace como un software libre de uso personal, el modelo abarca claras oportunidades de explotación en el sector productivo:
+
+-   **Licenciamiento Marca Blanca B2B:** Adaptación de la herramienta para gestoras de residencias universitarias, comunidades de *co-living* o agencias de viajes grupales que deseen ofrecer a sus clientes una app de gestión de gastos personalizada e integrada en sus servicios sin incurrir en costes de servidor.
+-   **Servicios de Respaldo Cifrado Opcional:** Posibilidad de ofrecer un servicio de sincronización *peer-to-peer* (P2P) o almacenamiento en la nube cifrado de extremo a extremo (*E2EE*) bajo un modelo de suscripción premium, manteniendo la privacidad intacta.
+-   **Soporte y Donaciones (Open-Core):** Modelo de financiación basado en patrocinios y donaciones de la comunidad que valore la neutralidad y la ausencia de publicidad.
+
+#### Tipo de proyecto requerido
+
+Para dar respuesta a las demandas detectadas en el mercado, se requiere un **proyecto de software multiplataforma de arquitectura desacoplada**. La solución no debe depender de una infraestructura *Cloud* costosa, sino apoyarse en la capacidad de procesamiento del dispositivo cliente (escritorio/móvil) mediante un diseño por capas (MVC) que garantice el rendimiento local, la persistencia sin conexión y la usabilidad inmediata requerida por el público objetivo.
 # 1.4. Objetivos del proyecto.
 
 ## 1.4.1. Objetivo general
