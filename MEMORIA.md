@@ -3,6 +3,14 @@
 * Asignatura: Proyecto Intermodular
 * Curso: 2º Desarrollo de Aplicaciones Multiplataforma (DAM)
   
+COEVALUACIÓN SPRINT 1:
+
+| Integrante | Nota (%) |
+| :--- | :--- |
+| Guillermo Eugui | 100% |
+| Jesús Cabeza | 100% | 
+| JoseLuís Segura | 95% |
+
 ---
 
 # 1. INTRODUCCIÓN
