@@ -14,10 +14,14 @@ COEVALUACIÓN SPRINT 1:
 ---
 
 # 1. INTRODUCCIÓN
-## 1.1. Contexto del Proyecto
-Hoy en día, la gestión de gastos compartidos es una necesidad habitual: ya sea para administrar las cuentas de un piso de estudiantes, organizar un viaje o planificar un evento en grupo. Aunque este tipo de situaciones cotidianas se ha digitalizado casi por completo, las herramientas actuales sigue presentando retos operativos para los usuarios.
+## 1.1. Contexto del proyecto
+En la actualidad, la gestión compartida de gastos en entornos cotidianos —como el reparto de facturas en un piso de estudiantes, el saldo de cuentas durante un viaje o la organización de un evento grupal— constituye una necesidad recurrente en la sociedad digitalizada. Sin embargo, el panorama tecnológico actual presenta una fuerte dicotomía en las empresas del sector fintech y de software de productividad personal:
 
-Aprovechando esta realidad, y dentro del marco del ciclo de 2º de Desarrollo de Aplicaciones Multiplataforma (DAM), surge este proyecto intermodular. El objetivo es integrar de forma práctica los conocimiento0s adquiridos en las distintas asignaturas (Desarrollo de Interfaces, Programación Multimedia, Acceso a Datos) para construir una solución de software propia y eficiente. Para ello, el proyecto plantea una evolución tecnológica escalonada: partiendo de una primera versión funcional de escritorio, para culminar en el desarrollo de una aplicación móvil multiplataforma completa.
+* **Empresas SaaS Corporativas / Modelos Freemium (ej. Splitwise, Tricount / Topptip, Revolut Group Split):** Son organizaciones consolidadas orientadas al beneficio masivo. Su infraestructura depende de servidores centralizados en la nube, lo que genera elevados costes fijos de mantenimiento. Para sostener su estructura organizativa, estas empresas recurren a la monetización agresiva mediante muros de pago (paywalls), restricciones artificiales en el número de registros diarios de gastos, bombardero publicitario en la interfaz y la recopilación de datos de comportamiento del usuario para la venta de perfiles publicitarios.
+
+* **Soluciones Open Source / Utilidades Privadas (ej. IHavePaid, Bitcharge):** Son desarrollos independientes o de comunidades reducidas centrados en la privacidad. Aunque eliminan los costes de servidores y la publicidad, suelen carecer de una experiencia de usuario (UX) cuidada, ofrecen interfaces arcaicas y carecen de soporte multiplataforma estructurado.
+
+En este marco surge PayClear, un proyecto desarrollado en el ciclo formativo de grado superior en Desarrollo de Aplicaciones Multiplataforma (DAM). PayClear se posiciona en el espacio intermedio del sector: un software con arquitectura Local-First (local por diseño) que elimina los costes de infraestructura en la nube y los intermediarios corporativos, combinando la usabilidad de las aplicaciones comerciales de primer nivel con la privacidad, gratuidad e inmediatez del software libre.
 
 ## 1.2. Problema o necesidad detectada
 ​Aunque ya existen aplicaciones muy famosas para dividir gastos (seguro que os suenan Splitwise o Tricount), la realidad es que usarlas se ha vuelto un poco desesperante últimamente. Nos hemos dado cuenta de que tienen varios problemas que frustran bastante al usuario:
@@ -27,6 +31,7 @@ Aprovechando esta realidad, y dentro del marco del ciclo de 2º de Desarrollo de
 * **Publicidad y funciones de pago:** Las apps actuales te bombardean con anuncios molestos y te bloquean opciones básicas (como añadir más de "X" gastos al día) para obligarte a pagar una suscripción.
 * **Lo que nos dijo la gente:** (METER AQUI DATOS DEL FORMULARIO)
 * **Ejemplo:** "De hecho, en la encuesta que pasamos a numerosas personas, nos sorprendió ver que la queja principal era la publicidad y lo lentas que son para simplemente apuntar un gasto...."
+
 
 ### ​1.3. Propuesta de solución
 
