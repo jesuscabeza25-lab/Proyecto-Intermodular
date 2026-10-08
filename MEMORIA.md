@@ -9,7 +9,7 @@ COEVALUACIÓN SPRINT 1:
 | :--- | :--- |
 | Guillermo Eugui | 100% |
 | Jesús Cabeza | 100% | 
-| JoseLuís Segura | 95% |
+| JoseLuís Segura | 100% |
 
 ---
 
