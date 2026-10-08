@@ -17,14 +17,14 @@ COEVALUACIÓN SPRINT 1:
 ## 1.1. Contexto del proyecto
 En la actualidad, la gestión compartida de gastos en entornos cotidianos —como el reparto de facturas en un piso de estudiantes, el saldo de cuentas durante un viaje o la organización de un evento grupal— constituye una necesidad recurrente en la sociedad digitalizada. Sin embargo, el panorama tecnológico actual presenta una fuerte dicotomía en las empresas del sector fintech y de software de productividad personal:
 
-* **Empresas SaaS Corporativas / Modelos Freemium (ej. Splitwise, Tricount / Topptip, Revolut Group Split):** Son organizaciones consolidadas orientadas al beneficio masivo. Su infraestructura depende de servidores centralizados en la nube, lo que genera elevados costes fijos de mantenimiento. Para sostener su estructura organizativa, estas empresas recurren a la monetización agresiva mediante muros de pago (paywalls), restricciones artificiales en el número de registros diarios de gastos, bombardero publicitario en la interfaz y la recopilación de datos de comportamiento del usuario para la venta de perfiles publicitarios.
+* **Empresas SaaS Corporativas / Modelos Freemium (ej. Splitwise, Tricount / Topptip, Revolut Group Split):** Son organizaciones consolidadas orientadas al beneficio masivo. Su infraestructura depende de servidores centralizados en la nube, lo que genera elevados costes fijos de mantenimiento. Para sostener su estructura organizativa, estas empresas recurren a la monetización agresiva mediante muros de pago (paywalls), restricciones artificiales en el número de registros diarios de gastos, bombardeo publicitario en la interfaz y la recopilación de datos de comportamiento del usuario para la venta de perfiles publicitarios.
 
 * **Soluciones Open Source / Utilidades Privadas (ej. IHavePaid, Bitcharge):** Son desarrollos independientes o de comunidades reducidas centrados en la privacidad. Aunque eliminan los costes de servidores y la publicidad, suelen carecer de una experiencia de usuario (UX) cuidada, ofrecen interfaces arcaicas y carecen de soporte multiplataforma estructurado.
 
 En este marco surge PayClear, un proyecto desarrollado en el ciclo formativo de grado superior en Desarrollo de Aplicaciones Multiplataforma (DAM). PayClear se posiciona en el espacio intermedio del sector: un software con arquitectura Local-First (local por diseño) que elimina los costes de infraestructura en la nube y los intermediarios corporativos, combinando la usabilidad de las aplicaciones comerciales de primer nivel con la privacidad, gratuidad e inmediatez del software libre.
 
 ## 1.2. Problema o necesidad detectada
-A pesar de la popularidad de las herramientas comerciales para la gestión de deudas, el modelo de negocio de estas plataformas ha terminado por degradar la experiencia de uso. Con el fin de validar científicamente esta problemática antes de iniciar el desarrollo técnico, el equipo realizó un estudio de mercado mediante una encuesta pública (*Google Forms*) a un total de 14 usuarios del perfil objetivo (estudiantes, compañeros de piso y colectivos habituales).
+A pesar de la popularidad de las herramientas comerciales para la gestión de deudas, el modelo de negocio de estas plataformas ha terminado por degradar la experiencia de uso. Con el fin de validar científicamente esta problemática antes de iniciar el desarrollo técnico, el equipo realizó un estudio de mercado mediante una encuesta pública a un total de 14 usuarios del perfil objetivo (estudiantes, compañeros de piso y colectivos habituales).
 
 ### Datos empíricos extraídos del estudio de mercado:
 
@@ -46,26 +46,31 @@ Los hallazgos del formulario reflejan deficiencias estructurales en las distinta
 3.  **Departamento Legal y de Protección de Datos:** La exigencia de correos electrónicos, números de teléfono y la monitorización de hábitos de consumo vulnera el principio de minimización de datos del RGPD, generando desconfianza en los usuarios sobre el tratamiento de sus finanzas personales.
 
 
-### 1.3. Propuesta de solución
+## 1.3. Propuesta de solución
 
-PayClear responde a estas deficiencias mediante una aplicación de gestión de deudas centrada exclusivamente en la eficiencia, la privacidad y la agilidad de uso, articulada bajo los siguientes pilares de diseño:
+PayClear responde a las necesidades detectadas mediante una aplicación de gestión de gastos compartidos centrada en la eficiencia, la privacidad y la agilidad de uso.
 
--   **Arquitectura Local-First y Privacidad Estricta:** La base de datos reside 100% en el almacenamiento local del dispositivo mediante ficheros JSON codificados. Funciona de manera autónoma sin conexión a internet y elimina por completo los formularios de registro, correos o contraseñas en servidores externos.
--   **Cero Fricción en UI/UX:** Interfaz de ventana única que permite registrar cualquier gasto o consultar el estado global del grupo en menos de dos clics, integrando un componente reutilizable (`TarjetaSaldoParticipante`) con un semáforo cromático automático (verde = acreedor, rojo = deudor, gris = saldado).
--   **Calculadora de Reparto Rápido:** Modal emergente enfocado en la división inmediata de tickets de restaurantes o compras colectivas a partes iguales o personalizadas.
--   **Evolución Tecnológica Escalonada:** Desarrollo de una versión de escritorio en Java Swing bajo el patrón arquitectónico MVC, sirviendo como núcleo desacoplado para su posterior traslado hacia dispositivos móviles mediante el *framework* Flutter.
+Los principales pilares de la solución son:
 
-#### Oportunidades de negocio previsibles en el sector
+-   **Arquitectura Local-First y privacidad:** en la fase inicial, los datos se almacenarán localmente en el dispositivo mediante ficheros JSON, permitiendo el funcionamiento sin conexión a Internet y reduciendo la exposición de información personal a servicios externos.
+-   **Cero fricción en la UI/UX:** se plantea una interfaz de ventana única que facilite el registro de gastos y la consulta del estado global del grupo con el menor número posible de pasos.
+-   **Calculadora de reparto rápido:** se incorpora una funcionalidad específica para dividir tickets y compras colectivas entre varios participantes de forma rápida, tanto a partes iguales como mediante cantidades personalizadas.
+-   **Simplificación de la liquidación:** se utilizará un algoritmo de liquidación basado en una estrategia voraz para reducir el número de transferencias necesarias entre acreedores y deudores.
+-   **Evolución tecnológica escalonada:** la primera implementación prevista será una aplicación de escritorio en Java Swing siguiendo el patrón MVC, dejando preparada la arquitectura para una futura extensión móvil mediante Flutter.
 
-Aunque PayClear nace como un software libre de uso personal, el modelo abarca claras oportunidades de explotación en el sector productivo:
+### Oportunidades de negocio previsibles
 
--   **Licenciamiento Marca Blanca B2B:** Adaptación de la herramienta para gestoras de residencias universitarias, comunidades de *co-living* o agencias de viajes grupales que deseen ofrecer a sus clientes una app de gestión de gastos personalizada e integrada en sus servicios sin incurrir en costes de servidor.
--   **Servicios de Respaldo Cifrado Opcional:** Posibilidad de ofrecer un servicio de sincronización *peer-to-peer* (P2P) o almacenamiento en la nube cifrado de extremo a extremo (*E2EE*) bajo un modelo de suscripción premium, manteniendo la privacidad intacta.
--   **Soporte y Donaciones (Open-Core):** Modelo de financiación basado en patrocinios y donaciones de la comunidad que valore la neutralidad y la ausencia de publicidad.
+Aunque el proyecto se plantea inicialmente como una solución gratuita de uso personal, se identifican posibles vías futuras de explotación, entre ellas:
 
-#### Tipo de proyecto requerido
+-   Adaptaciones de marca blanca para organizaciones que gestionen grupos de usuarios.
+-   Servicios opcionales de respaldo o sincronización respetando los requisitos de privacidad.
+-   Servicios de soporte, mantenimiento o financiación mediante aportaciones de usuarios y organizaciones.
 
-Para dar respuesta a las demandas detectadas en el mercado, se requiere un **proyecto de software multiplataforma de arquitectura desacoplada**. La solución no debe depender de una infraestructura *Cloud* costosa, sino apoyarse en la capacidad de procesamiento del dispositivo cliente (escritorio/móvil) mediante un diseño por capas (MVC) que garantice el rendimiento local, la persistencia sin conexión y la usabilidad inmediata requerida por el público objetivo.
+### Tipo de proyecto requerido
+
+Para responder a las necesidades detectadas se requiere un proyecto de software multiplataforma con una arquitectura desacoplada, orientada al funcionamiento local, la persistencia sin conexión y una experiencia de usuario sencilla e inmediata.
+
+
 # 1.4. Objetivos del proyecto.
 
 ## 1.4.1. Objetivo general
