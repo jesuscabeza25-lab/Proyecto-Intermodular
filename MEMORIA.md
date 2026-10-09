@@ -108,13 +108,13 @@ Cada pantalla y función responde a una necesidad concreta detectada en las alte
   * *Por qué se hace y qué nos llevó a ella:* En herramientas como Splitwise los balances están escondidos tras varios menús. Hacía falta ver de golpe la situación económica del grupo.
   * *Función esperada:* Ventana única que lista los miembros y aplica un código de colores automático con el componente `TarjetaSaldoParticipante`: verde para quien cobra, rojo para quien debe y gris para saldo a cero.
   
-  ![Pantalla de balances](https://github.com/jesuscabeza25-lab/Desarrollo-de-Interfaz/blob/main/img/pantalla%20de%20deudas%20pendientes%20y%20saldadas.png?raw=true)
+  ![Pantalla de balances](https://github.com/jesuscabeza25-lab/Proyecto-Intermodular/blob/main/img/pantalla%20de%20deudas%20pendientes%20y%20saldadas.png) 
 
 * **Calculadora de reparto rápido (modal overlay):**
   * *Por qué se hace y qué nos llevó a ella:* Al pagar cuentas o compras conjuntas se pierde tiempo echando cálculos a mano o repartiendo picos sueltos.
   * *Función esperada:* Ventana modal emergente que permite meter el importe del ticket y elegir quiénes participan para repartir el gasto a partes iguales o personalizadas sin cerrar la pantalla principal.
   
-  ![Calculadora Modal](https://github.com/jesuscabeza25-lab/Desarrollo-de-Interfaz/blob/main/img/Calculadora.png?raw=true)
+  ![Calculadora Modal](https://github.com/jesuscabeza25-lab/Proyecto-Intermodular/blob/main/img/Calculadora.png)
 
 * **Liquidación multilateral optimizada (Algoritmo Voraz):**
   * *Por qué se hace y qué nos llevó a ella:* En grupos con muchos gastos cruzados se generan multitud de micropagos cruzados entre amigos.
@@ -124,7 +124,7 @@ Cada pantalla y función responde a una necesidad concreta detectada en las alte
   * *Por qué se hace y qué nos llevó a ella:* Pedir usuario, contraseña o email es la principal molestia al usar apps comerciales.
   * *Función esperada:* Acceso directo para abrir o crear el archivo del grupo de gastos en el equipo sin necesidad de internet ni registro en servidores.
   
-  ![Acceso al grupo local](https://github.com/jesuscabeza25-lab/Desarrollo-de-Interfaz/blob/main/img/Iniciar%20sesion.png?raw=true)
+  ![Acceso al grupo local](https://github.com/jesuscabeza25-lab/Proyecto-Intermodular/blob/main/img/Iniciar%20sesion.png)
 
 ---
 
