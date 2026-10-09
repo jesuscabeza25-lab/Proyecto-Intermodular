@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="img/logo-payClear.png" alt="PayClear Logo" width="180" />
+  <img src="img/payclear-logo-animado.svg" alt="PayClear Logo" width="180" />
 
   # PayClear
 
