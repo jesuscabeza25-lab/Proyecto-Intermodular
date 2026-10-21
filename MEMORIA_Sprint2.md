@@ -1,1 +1,10 @@
+# 2.4. Partes interesadas
 
+| Rol | Tipo | Categoría | Expectativas Principales | Nivel de Influencia | Estrategia de Comunicación Recomendada |
+| :--- | :---: | :---: | :--- | :---: | :--- |
+| **Equipo Scrum** | Interno | Primario | Claridad en los requisitos, reparto tareas y cumplimiento de plazos sin sobrecarga. | **Alto**<br>*(Gestionar el proyecto)* | *Daily Scrums* de 15 min, gestión en tiempo real mediante tablero Kanban y *Sprint Retrospectives*. |
+| **Tribunal Evaluador** | Interno | Primario | Cumplimiento de los criterios de los RA, analizar documentación en Git, calidad técnica del código y demostrar la viabilidad del proyecto. | **Alto**<br>*(Gestionar de cerca)* | Presentaciones formales en cada *Sprint Review*, entrega puntual de capítulos en Markdown y seguimiento en tutorías. |
+| **Usuarios Finales** | Externo | Primario | Aplicación gratuita, sin anuncios ni registros obligatorios, aplicación *offline* y que liquidación de deudas rápidas. | **Alto**<br>*(Mantener informados)* | Encuestas de validación, pruebas de usabilidad con prototipos interactivos y changelogs. |
+| **Organismos Reguladores (AEPD, UE - RGPD / UNE)** | Externo | Secundario | Cumplimiento de privacidad, derechos de autor y accesibilidad WCAG 2.1 AA. | **Medio**<br>*(Mantener satisfechos)* | Auditoría interna de cumplimiento legal en la Memoria Técnica y redacción de políticas de privacidad y licencias en el repositorio. |
+| **Proveedores Tecnológicos (GitHub, Flutter, Oracle...)** | Externo | Secundario | Respeto a las licencias de software libre y uso de sus APIs y librerías. | **Bajo**<br>*(Monitorizar)* | Control de licencias en la documentación técnica y seguimiento de *releases* oficiales en repositorios. |
+| **Competidores(Splitwise, Tricount, Settle Up)** | Externo | Secundario | Mantener su mercado y rentabilizar sus modelos de suscripción. | **Bajo**<br>*(Monitorizar)* | Análisis de *benchmarking* periódico para vigilar cambios en sus métodos de monetización y mantener la ventaja competitiva de PayClear. |
