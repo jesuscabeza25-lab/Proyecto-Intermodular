@@ -18,37 +18,37 @@ PayClear pertenece al sector FinTech (Financial Technology), dentro de la línea
 
 **Ficha 1: Carlos Gómez – El tesorero del piso (Perfil Gestor / Ordenador)** 
 
-**Carlos tiene 23 años, estudia y vive en un piso compartido. Es la persona organizada de la casa que se encarga de llevar al día las facturas de la luz, el agua y el alquiler desde su ordenador portátil.** 
+Carlos tiene 23 años, estudia y vive en un piso compartido. Es la persona organizada de la casa que se encarga de llevar al día las facturas de la luz, el agua y el alquiler desde su ordenador portátil. 
 
--   **Nivel tecnológico: Maneja bien los ordenadores. Le gusta usar la hoja de cálculo (Excel) y prefiere usar atajos de teclado antes que estar haciendo clic con el ratón para ir más rápido.** 
--   **¿Qué necesita?: Apuntar los gastos de forma rápida, ver en una sola pantalla todos los números claros del piso sin dar vueltas por menús complicados y guardar una copia de seguridad de las cuentas por si acaso.** 
+-   **Nivel tecnológico:** Maneja bien los ordenadores. Le gusta usar la hoja de cálculo (Excel) y prefiere usar atajos de teclado antes que estar haciendo clic con el ratón para ir más rápido. 
+-   **¿Qué necesita?:** Apuntar los gastos de forma rápida, ver en una sola pantalla todos los números claros del piso sin dar vueltas por menús complicados y guardar una copia de seguridad de las cuentas por si acaso. 
 -   **¿Cómo responde PayClear en la pantalla?:**
-    -   **Toda la información del piso se muestra en una única ventana fácil de entender.**
-    -   **Se puede mover por los campos de texto usando solo la tecla Tabulador y confirmar con Enter, sin necesidad de tocar el ratón.**
-    -   **Permite guardar las cuentas directamente como un archivo en su propio ordenador para tenerlo siempre a salvo.**
+    -   Toda la información del piso se muestra en una única ventana fácil de entender.
+    -   Se puede mover por los campos de texto usando solo la tecla Tabulador y confirmar con Enter, sin necesidad de tocar el ratón.
+    -   Permite guardar las cuentas directamente como un archivo en su propio ordenador para tenerlo siempre a salvo.
 
 **Ficha 2: Sofía Martínez – La compañera de piso (Perfil Usuario / Móvil)**
 
-**Sofía tiene 20 años y comparte piso con Carlos. Usa la aplicación desde su teléfono móvil sobre la marcha (al salir del supermercado o en la cafetería), muchas veces sin internet o sin cobertura.**
+Sofía tiene 20 años y comparte piso con Carlos. Usa la aplicación desde su teléfono móvil sobre la marcha (al salir del supermercado o en la cafetería), muchas veces sin internet o sin cobertura.
 
--   **Nivel tecnológico: Normal. Usa el móvil a diario para redes sociales y mensajería, por lo que busca cosas visuales, sencillas y directas.**
--   **¿Qué necesita?: Apuntar un ticket de la compra en un par de segundos y saber de un vistazo rápido si le deben dinero o si le toca pagar a ella.**
+-   **Nivel tecnológico:** Normal. Usa el móvil a diario para redes sociales y mensajería, por lo que busca cosas visuales, sencillas y directas.
+-   **¿Qué necesita?:** Apuntar un ticket de la compra en un par de segundos y saber de un vistazo rápido si le deben dinero o si le toca pagar a ella.
 -   **¿Cómo responde PayClear en la pantalla?:**
-      -   **Usa tarjetas de colores muy claras y fáciles de leer para cualquier persona:**
-        -   **Verde: Le deben dinero a ella.**
-        -   **Rojo: Ella debe dinero a sus compañeros.**
-        -   **Gris: Las cuentas están a cero (saldadas).**
-    -   **Incluye un botón sencillo para abrir una calculadora rápida que divide el ticket en partes iguales o personalizadas sin complicaciones.**
+    -   Usa tarjetas de colores muy claras y fáciles de leer para cualquier persona:
+        -   **Verde:** Le deben dinero a ella.
+        -   **Rojo:** Ella debe dinero a sus compañeros.
+        -   **Gris:** Las cuentas están a cero (saldadas).
+    -   Incluye un botón sencillo para abrir una calculadora rápida que divide el ticket en partes iguales o personalizadas sin complicaciones.
 
 **Ficha 3: Javier Ruiz – El gestor del edificio de alquiler (Buyer Persona / Cliente Empresa)**
 
-**Javier tiene 38 años y trabaja gestionando una residencia de estudiantes o un edificio con varios pisos compartidos.**
+Javier tiene 38 años y trabaja gestionando una residencia de estudiantes o un edificio con varios pisos compartidos.
 
--   **Nivel tecnológico: Medio-alto. Usa programas de gestión en su trabajo diario.**
--   **¿Qué necesita?: Recomendar a los inquilinos una herramienta para que gestionen sus gastos sin pelearse, pero sin que su empresa tenga que pagar cuotas mensuales de servidores ni responsabilizarse de guardar datos personales (correos, teléfonos o tarjetas de crédito) de los jóvenes.**
+-   **Nivel tecnológico:** Medio-alto. Usa programas de gestión en su trabajo diario.
+-   **¿Qué necesita?:** Recomendar a los inquilinos una herramienta para que gestionen sus gastos sin pelearse, pero sin que su empresa tenga que pagar cuotas mensuales de servidores ni responsabilizarse de guardar datos personales (correos, teléfonos o tarjetas de crédito) de los jóvenes.
 -   **¿Cómo responde PayClear en la pantalla?:**
-    -   **Al no guardar datos en internet ni en la nube (todo se guarda dentro del móvil u ordenador de los propios usuarios), la empresa de Javier no gasta dinero en servidores ni se expone a problemas con las leyes de protección de datos.**
-    -   **Permite personalizar la aplicación con la marca o logo del edificio si la empresa quiere ofrecerla como un servicio extra a sus inquilinos.**
+    -   Al no guardar datos en internet ni en la nube (todo se guarda dentro del móvil u ordenador de los propios usuarios), la empresa de Javier no gasta dinero en servidores ni se expone a problemas con las leyes de protección de datos.
+    -   Permite personalizar la aplicación con la marca o logo del edificio si la empresa quiere ofrecerla como un servicio extra a sus inquilinos.
 
 
 
