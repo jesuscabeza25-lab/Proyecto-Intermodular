@@ -35,6 +35,17 @@ Ficha 3: Javier Ruiz – Gestor de Co-Living (Buyer Persona B2B)
 - Objetivos: Ofrecer una solución a los residentes para evitar conflictos de gastos sin asumir costes de infraestructura ni riesgos legales sobre datos personales.
 - Impacto en UI/UX: Modelo de Marca Blanca B2B de coste $0 en servidores gracias a la arquitectura Local-First.
 
+  **FUENTES:**
+  
+  AEPD - Guía de Privacidad desde el Diseño:
+  https://www.aepd.es/guias/guia-privacidad-desde-diseno.pdf
+  
+  ISO/IEC 25010 (Modelo de Calidad de Software y Usabilidad):
+  https://www.iso.org/standard/35733.html
+  
+  Nielsen Norman Group - 10 Principios Heurísticos de Nielsen:
+  https://www.nngroup.com/articles/ten-usability-heuristics/
+
 
 
 # 2.4. Partes interesadas
