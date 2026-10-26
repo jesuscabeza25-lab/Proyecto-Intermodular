@@ -1,7 +1,8 @@
-# 2.1. SECTOR PROFESIONAL Y PERFIL DE USUARIOS**
+## **2.1. SECTOR PROFESIONAL Y PERFIL DE USUARIOS**
 
-**2.1.1. Caracterización del sector profesional**
-PayClear se sitúa en el sector FinTech (Financial Technology), dentro de la vertical de Gestión de Finanzas Personales (PFM) y sistemas de liquidación P2P no bancarios.   El sector evoluciona impulsado por la desafección hacia las aplicaciones SaaS comerciales tradicionales (Splitwise, Tricount), debido a sus muros de pago (paywalls), cuotas de registro y publicidad invasiva. En respuesta, PayClear adopta un modelo Local-First, que garantiza la operatividad sin conexión a Internet y cumple de forma nativa con el principio de privacidad por diseño.
+### **2.1.1. Caracterización del sector profesional**
+PayClear pertenece al sector FinTech (Financial Technology), dentro de la línea de Gestión de Finanzas Personales y de los sistemas de pago P2P no bancarios. El sector se mueve impulsado por la frustración con las aplicaciones SaaS tradicionales (Splitwise, Tricount) por sus barreras de pago (paywalls), cuotas de registro y publicidad invasiva. Como respuesta, PayClear adopta un modelo Local-First, que garantiza la operatividad sin conexión a Internet y respeta de forma nativa el principio de privacidad por diseño.
+
 
 
 **Tabla descriptiva del sector y modelo de negocio**
@@ -11,40 +12,43 @@ PayClear se sitúa en el sector FinTech (Financial Technology), dentro de la ver
 | **Persistencia** | Servidores remotos de terceros | Almacenamiento local en el equipo (JSON) |
 | **Conexión** | Conexión obligatoria a Internet | Operatividad 100% offline |
 | **Modelo** | Suscripción Premium y banners publicitarios | Gratuito sin anuncios / Licencia Marca Blanca B2B |
-| **Privacidad** | Registro de email/teléfono obligatorio | Minimización de datos: cero datos personales (RGPD) |
+| **Privacidad** | Registro de email/teléfono obligatorio | Minimización de datos: cero datos personales |
 
+### **2.1.2. Segmentación de perfiles de usuario (User Personas)**
 
+**Ficha 1: Carlos Gómez – El tesorero del piso (Perfil Gestor / Ordenador)** 
 
-**2.1.2. Segmentación de perfiles de usuario (User Personas)**
+**Carlos tiene 23 años, estudia y vive en un piso compartido. Es la persona organizada de la casa que se encarga de llevar al día las facturas de la luz, el agua y el alquiler desde su ordenador portátil.** 
 
-Ficha 1: Carlos Gómez – Tesorero del Piso (Perfil Gestor / Escritorio)
-- Rol y Entorno: Estudiante (23 años). Administra facturas de un piso compartido desde un ordenador portátil/escritorio.
-- Competencias Digitales: Avanzadas (uso habitual de hojas de cálculo, gestión de ficheros y atajos de teclado).
-- Objetivos: Introducir facturas rápidamente, visualizar balances globales con alta densidad de datos y exportar respaldos.
-- Impacto en UI/UX: Interfaz en ventana única en Java Swing, navegación 100% por teclado (Tab/Enter) y exportación directa a JSON.
+-   **Nivel tecnológico: Maneja bien los ordenadores. Le gusta usar la hoja de cálculo (Excel) y prefiere usar atajos de teclado antes que estar haciendo clic con el ratón para ir más rápido.** 
+-   **¿Qué necesita?: Apuntar los gastos de forma rápida, ver en una sola pantalla todos los números claros del piso sin dar vueltas por menús complicados y guardar una copia de seguridad de las cuentas por si acaso.** 
+-   **¿Cómo responde PayClear en la pantalla?:**
+    -   **Toda la información del piso se muestra en una única ventana fácil de entender.**
+    -   **Se puede mover por los campos de texto usando solo la tecla Tabulador y confirmar con Enter, sin necesidad de tocar el ratón.**
+    -   **Permite guardar las cuentas directamente como un archivo en su propio ordenador para tenerlo siempre a salvo.**
 
-Ficha 2: Sofía Martínez – Conviviente Ocasional (Perfil Usuario / Móvil)
-- Rol y Entorno: Estudiante (20 años). Añade tickets puntuales desde el smartphone (Android/iOS), frecuentemente en movimiento o sin cobertura.
-- Competencias Digitales: Medias (nativa digital orientada a interfaces táctiles e intuitivas).
-- Objetivos: Anotar un gasto en segundos y comprobar de un vistazo su estado de deuda.
-- Impacto en UI/UX: Componente TarjetaSaldoParticipante con semáforo cromático (verde/rojo/gris) con contraste accesible (WCAG 2.1 AA) y ventana modal de calculadora rápida.
+**Ficha 2: Sofía Martínez – La compañera de piso (Perfil Usuario / Móvil)**
 
-Ficha 3: Javier Ruiz – Gestor de Co-Living (Buyer Persona B2B)
-- Rol y Entorno: Responsable de operaciones (38 años) en una residencia universitaria o complejo de co-living
-- Competencias Digitales: Medias-Altas (usuario de software de gestión de empresas).
-- Objetivos: Ofrecer una solución a los residentes para evitar conflictos de gastos sin asumir costes de infraestructura ni riesgos legales sobre datos personales.
-- Impacto en UI/UX: Modelo de Marca Blanca B2B de coste $0 en servidores gracias a la arquitectura Local-First.
+**Sofía tiene 20 años y comparte piso con Carlos. Usa la aplicación desde su teléfono móvil sobre la marcha (al salir del supermercado o en la cafetería), muchas veces sin internet o sin cobertura.**
 
-  **FUENTES:**
-  
-  AEPD - Guía de Privacidad desde el Diseño:
-  https://www.aepd.es/guias/guia-privacidad-desde-diseno.pdf
-  
-  ISO/IEC 25010 (Modelo de Calidad de Software y Usabilidad):
-  https://www.iso.org/standard/35733.html
-  
-  Nielsen Norman Group - 10 Principios Heurísticos de Nielsen:
-  https://www.nngroup.com/articles/ten-usability-heuristics/
+-   **Nivel tecnológico: Normal. Usa el móvil a diario para redes sociales y mensajería, por lo que busca cosas visuales, sencillas y directas.**
+-   **¿Qué necesita?: Apuntar un ticket de la compra en un par de segundos y saber de un vistazo rápido si le deben dinero o si le toca pagar a ella.**
+-   **¿Cómo responde PayClear en la pantalla?:**
+      -   **Usa tarjetas de colores muy claras y fáciles de leer para cualquier persona:**
+        -   **Verde: Le deben dinero a ella.**
+        -   **Rojo: Ella debe dinero a sus compañeros.**
+        -   **Gris: Las cuentas están a cero (saldadas).**
+    -   **Incluye un botón sencillo para abrir una calculadora rápida que divide el ticket en partes iguales o personalizadas sin complicaciones.**
+
+**Ficha 3: Javier Ruiz – El gestor del edificio de alquiler (Buyer Persona / Cliente Empresa)**
+
+**Javier tiene 38 años y trabaja gestionando una residencia de estudiantes o un edificio con varios pisos compartidos.**
+
+-   **Nivel tecnológico: Medio-alto. Usa programas de gestión en su trabajo diario.**
+-   **¿Qué necesita?: Recomendar a los inquilinos una herramienta para que gestionen sus gastos sin pelearse, pero sin que su empresa tenga que pagar cuotas mensuales de servidores ni responsabilizarse de guardar datos personales (correos, teléfonos o tarjetas de crédito) de los jóvenes.**
+-   **¿Cómo responde PayClear en la pantalla?:**
+    -   **Al no guardar datos en internet ni en la nube (todo se guarda dentro del móvil u ordenador de los propios usuarios), la empresa de Javier no gasta dinero en servidores ni se expone a problemas con las leyes de protección de datos.**
+    -   **Permite personalizar la aplicación con la marca o logo del edificio si la empresa quiere ofrecerla como un servicio extra a sus inquilinos.**
 
 
 
