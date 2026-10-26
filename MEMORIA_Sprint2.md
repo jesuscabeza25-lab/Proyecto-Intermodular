@@ -62,3 +62,61 @@ Javier tiene 38 años y trabaja gestionando una residencia de estudiantes o un e
 | **Organismos Reguladores (AEPD, UE - RGPD / UNE)** | Externo | Secundario | Cumplimiento de privacidad, derechos de autor y accesibilidad WCAG 2.1 AA. | **Medio**<br>*(Mantener satisfechos)* | Auditoría interna de cumplimiento legal en la Memoria Técnica y redacción de políticas de privacidad y licencias en el repositorio. |
 | **Proveedores Tecnológicos (GitHub, Flutter, Oracle...)** | Externo | Secundario | Respeto a las licencias de software libre y uso de sus APIs y librerías. | **Bajo**<br>*(Monitorizar)* | Control de licencias en la documentación técnica y seguimiento de *releases* oficiales en repositorios. |
 | **Competidores(Splitwise, Tricount, Settle Up)** | Externo | Secundario | Mantener su mercado y rentabilizar sus modelos de suscripción. | **Bajo**<br>*(Monitorizar)* | Análisis de *benchmarking* periódico para vigilar cambios en sus métodos de monetización y mantener la ventaja competitiva de PayClear. |
+
+
+## 2.5. Estudio de viabilidad técnica
+
+### 2.5.1. Pila tecnológica
+
+* **Escritorio:** **Java 17** con **Java Swing** y la librería **FlatLaf** para poder tener una interfaz gráfica en más moderna en NetBeans Matisse.
+* **Móvil (penultima fase):** **Flutter (con Dart)** para compilar en Android.
+* **Persistencia y Seguridad:** Almacenamiento en local con **ficheros JSON** (usando la librería **Gson**) y proteger el acceso con **SHA-256**.
+* **Calidad y Pruebas:** **JUnit 5** para testear la lógica contable y el algoritmo voraz para las liquidaciones. 
+
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/f7ef95dd-6880-4ed1-a682-f7a52cac40dc" />
+
+### 2.5.2. Requisitos de hardware y despliegue
+
+### Sistemas Operativos
+
+| Sistema Operativo | Arquitectura / Procesador | Versiones Compatibles |
+| :--- | :--- | :--- |
+| **Windows** | x86_64 | Windows 10, 11<br>Server 2016, 2019, 2022, 2025 |
+| **Linux** | x64, AArch64 | Red Hat / RHEL 8, 9, 10 |
+| **Ubuntu** | x86_64 | 24.04 LTS, 25.04 |
+| **macOS** | Intel (x64) / Apple Silicon (ARM64) | macOS 12 Monterey o posterior  |
+
+### Requisitos de Hardware
+
+| Componente | Requisito Mínimo | Recomendado |  
+| :--- | :--- | :--- | 
+| **Memoria RAM** | 8 GB | 8 GB o más | 
+| **Espacio en Disco** | 300 MB *(solo JDK)* | 10 GB – 20 GB+ | 
+
+### 2.5.3. Curva de aprendizaje y madurez técnica
+- **Tecnologías dominadas:** Tenemos una base de principiantes en **Java**, POO y diseñar en **Swing/Matisse**.
+- **Formación necearia:** Usar **FlatLaf** y **Gson** requiere una curva de aprendizaje pequeñas (entre 1 y 2 días). Adaptarlo a **Flutter/Dart** tiene una curva media que se asume en la fase final gracias a su similitud sintáctica con Java y las clases dadas en la asignatura `Programación Multimedia y Dispositivos Móviles`
+
+### 2.5.4. Ficha técnica y conclusión
+
+| Parámetro | Especificación del Proyecto |
+| :--- | :--- |
+| **Arquitectura** | Local-First / Patrón Modelo Vista Controlador |
+| **Lenguajes y Entornos** | Java 17+ (NetBeans) y Dart (Flutter en Android Studio) |
+| **Interfaz Gráfica (UI)** | Java Swing + FlatLaf / Componentes propios (JavaBeans) |
+| **Persistencia y Seguridad** | Ficheros locales `.json` (con Gson) + encriptación Hash SHA-256 |
+| **Testing y Despliegue** | JUnit 5 / Ejecutable `.jar` (Escritorio) y `.apk` (Android) |
+
+**Conclusión de viabilidad:** El proyecto es **viable**. No necesita de infraestructura en la nube y usa tecnologías conocidas en el equipo, se garantiza el desarrollo y despliegue del software sin costes técnicos externos y dentro de los plazos del curso.
+
+---
+
+## Fuentes:
+
+**Java21:** https://docs.oracle.com/es-ww/iaas/jms/doc/system-requirements.html , https://www.igmguru.com/blog/how-to-install-java
+
+**FlatLaf:** https://www.reddit.com/r/java/comments/lsbcwe/flatlaf_10_swing_look_and_feel/?tl=es-es , https://github.com/JFormDesigner/FlatLaf
+
+**Gson:** https://dam.org.es/gson/ , https://ironpdf.com/es/java/blog/java-help/gson-java/
+
+**JUnit5:** https://es.parasoft.com/glossary/junit/ , https://www.arquitecturajava.com/junit-5-novedades-y-buenas-practicas/
