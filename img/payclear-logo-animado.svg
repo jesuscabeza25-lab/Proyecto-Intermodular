@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <clipPath id="body-clip">
+      <path d="M 205 188 Q 272 205 324 256 C 460 185 818 235 818 492 C 818 575 782 642 732 690 L 712 820 Q 710 832 696 832 L 614 832 Q 600 832 598 818 L 592 746 L 544 746 L 544 788 L 456 788 L 456 746 L 408 746 L 400 818 Q 398 832 384 832 L 314 832 Q 300 832 298 818 L 286 708 C 220 668 175 620 150 564 L 82 544 Q 68 540 68 524 L 68 456 Q 68 440 82 436 L 142 420 C 158 362 182 322 214 290 C 204 248 198 212 205 188 Z" />
+    </clipPath>
+    <clipPath id="slot-clip">
+      <path d="M 0 -200 H 1000 V 294 L 619 294 Q 500 256 381 294 L 0 294 Z" />
+    </clipPath>
+  </defs>
+
+  <style>
+    .piggy-group {
+      transform-origin: 500px 832px;
+      animation: piggy-bounce 2.4s cubic-bezier(0.36, 0, 0.66, 1) infinite;
+    }
+
+    .coin-wrapper {
+      clip-path: url(#slot-clip);
+    }
+
+    .coin {
+      transform-origin: 500px 152px;
+      animation: coin-drop 2.4s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+    }
+
+    .arrow-react {
+      transform-origin: 500px 580px;
+      animation: arrow-pulse 2.4s ease-out infinite;
+    }
+
+    .tail-react {
+      transform-origin: 822px 456px;
+      animation: tail-wag 2.4s ease-in-out infinite;
+    }
+
+    @keyframes coin-drop {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      18% {
+        transform: translateY(-35px) scale(1.04, 0.96);
+        opacity: 1;
+      }
+      45% {
+        transform: translateY(300px) scale(0.92, 1.08);
+        opacity: 1;
+      }
+      46% {
+        transform: translateY(300px) scale(0);
+        opacity: 0;
+      }
+      76% {
+        transform: translateY(-40px) scale(0);
+        opacity: 0;
+      }
+      90% {
+        transform: translateY(6px) scale(1.05, 0.95);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes piggy-bounce {
+      0%, 36% {
+        transform: scale(1, 1) translateY(0);
+      }
+      44% {
+        transform: scale(1.07, 0.91) translateY(12px);
+      }
+      56% {
+        transform: scale(0.96, 1.05) translateY(-18px);
+      }
+      67% {
+        transform: scale(1.02, 0.98) translateY(4px);
+      }
+      78%, 100% {
+        transform: scale(1, 1) translateY(0);
+      }
+    }
+
+    @keyframes arrow-pulse {
+      0%, 40% {
+        transform: translateY(0);
+      }
+      54% {
+        transform: translateY(-28px);
+      }
+      68% {
+        transform: translateY(5px);
+      }
+      80%, 100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes tail-wag {
+      0%, 38% {
+        transform: rotate(0deg);
+      }
+      48% {
+        transform: rotate(16deg);
+      }
+      60% {
+        transform: rotate(-12deg);
+      }
+      72% {
+        transform: rotate(6deg);
+      }
+      84%, 100% {
+        transform: rotate(0deg);
+      }
+    }
+  </style>
+
+  <g class="piggy-group">
+    <g class="tail-react">
+      <path d="M 822 456 C 875 456 914 425 914 388 C 914 356 888 342 866 356 C 846 368 852 406 884 414 C 908 420 930 410 944 398" stroke="#092B14" stroke-width="64" stroke-linejoin="round" stroke-linecap="round" fill="none" />
+      <path d="M 822 456 C 875 456 914 425 914 388 C 914 356 888 342 866 356 C 846 368 852 406 884 414 C 908 420 930 410 944 398" fill="none" stroke="#13582B" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <path d="M 205 188 Q 272 205 324 256 C 460 185 818 235 818 492 C 818 575 782 642 732 690 L 712 820 Q 710 832 696 832 L 614 832 Q 600 832 598 818 L 592 746 L 544 746 L 544 788 L 456 788 L 456 746 L 408 746 L 400 818 Q 398 832 384 832 L 314 832 Q 300 832 298 818 L 286 708 C 220 668 175 620 150 564 L 82 544 Q 68 540 68 524 L 68 456 Q 68 440 82 436 L 142 420 C 158 362 182 322 214 290 C 204 248 198 212 205 188 Z" stroke="#092B14" stroke-width="64" stroke-linejoin="round" stroke-linecap="round" fill="none" />
+
+    <path d="M 205 188 Q 272 205 324 256 C 460 185 818 235 818 492 C 818 575 782 642 732 690 L 712 820 Q 710 832 696 832 L 614 832 Q 600 832 598 818 L 592 746 L 544 746 L 544 788 L 456 788 L 456 746 L 408 746 L 400 818 Q 398 832 384 832 L 314 832 Q 300 832 298 818 L 286 708 C 220 668 175 620 150 564 L 82 544 Q 68 540 68 524 L 68 456 Q 68 440 82 436 L 142 420 C 158 362 182 322 214 290 C 204 248 198 212 205 188 Z" fill="#83C686" stroke="#13582B" stroke-width="50" stroke-linejoin="round" stroke-linecap="round" />
+
+    <g clip-path="url(#body-clip)">
+      <rect x="0" y="0" width="1000" height="1000" fill="#83C686" />
+      <path d="M 175 618 C 245 668 345 688 456 688 L 456 860 L 150 860 Z" fill="#6AB16E" />
+      <path d="M 755 350 C 790 485 735 635 544 688 L 544 860 L 850 860 L 850 350 Z" fill="#6AB16E" />
+      <g class="arrow-react">
+        <path d="M 500 368 L 352 558 L 456 558 L 456 840 L 544 840 L 544 558 L 648 558 Z" fill="#83C686" />
+        <path d="M 500 368 L 352 558 L 456 558 L 456 815 M 544 815 L 544 558 L 648 558 L 500 368" fill="none" stroke="#13582B" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" />
+      </g>
+    </g>
+
+    <path d="M 214 290 L 231 302" stroke="#13582B" stroke-width="26" stroke-linecap="round" />
+
+    <g class="coin-wrapper">
+      <g class="coin">
+        <circle cx="500" cy="152" r="110" stroke="#092B14" stroke-width="64" fill="none" />
+        <circle cx="500" cy="152" r="110" fill="#FFFFFF" stroke="#13582B" stroke-width="24" />
+        <path fill="#83C686" fill-rule="evenodd" d="
+          M 490 75 H 514 V 95 H 516 A 45 45 0 0 1 516 185 H 483 V 211 H 454 V 95 H 490 V 75 Z
+          M 483 122 H 514 A 18 18 0 0 1 514 158 H 483 V 122 Z
+          M 490 199 H 514 V 228 H 490 V 199 Z
+        " />
+      </g>
+    </g>
+
+    <path d="M 381 294 Q 500 256 619 294" fill="none" stroke="#13582B" stroke-width="26" stroke-linecap="round" />
+  </g>
+</svg>
